@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Shop Homepage - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="">
+    <script src="https://kit.fontawesome.com/99579c8f73.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#!">Start Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#!">All Products</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                            <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-dark" type="submit">
+                        <i class="bi-cart-fill me-1"></i>
+                        Cart
+                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+        </div>
+    </header>
+    <!-- Section-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://pic.clubic.com/v1/images/1905818/raw?fit=smartCrop&width=550&height=450&hash=4a1371f4c2ed4076c1c430fe120cbe6965bcc54d"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Fancy Product</h5>
+                                <!-- Product price-->
+                                <span value="250000">5000</span>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                        <!-- Product actions--> <i class="fa-solid fa-trash-can"></i>
+
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <button type="button" min="1" id="moins" class="btn btn-dark btn-xs">-</button>
+                            <input type="number" readonly value="1" name="number" id="rem">
+                            <button type="button" id="plus" class="btn btn-dark btn-xs">+</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="data:image/jpeg;base64,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"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Special Item</h5>
+                                <!-- Product reviews-->
+                                
+                                <!-- Product price-->
+                                <span value="180000">18.000</span> 
+                                <i class="fa-solid fa-heart"></i>
+
+                            </div>
+                        </div>
+                        <!-- Product actions--> <i class="fa-solid fa-trash-can"></i>
+
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <button type="button" class="btn btn-dark btn-xs">-</button>
+                            <input type="number" readonly value="1" name="number" id="rem">
+                            <button type="button" class="btn btn-dark btn-xs">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="data:image/jpeg;base64,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"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Sale Item</h5>
+                                <!-- Product price-->
+                                <span value="50000">50.000</span>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                        <!-- Product actions--><i class="fa-solid fa-trash-can"></i>
+
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <button type="button" class="btn btn-dark btn-xs">-</button>
+                            <input type="number" readonly value="1" name="number" id="rem">
+                            <button type="button" class="btn btn-dark btn-xs">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-UM_G-uJ9BU-XwczCgE2n30kRtZbzBlM4tw&usqp=CAU"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Popular Item</h5>
+                                <!-- Product reviews-->
+                               
+                                <!-- Product price-->
+                                <span value="16500">16500</span>
+                                <i class="fa-solid fa-heart"></i>
+                                
+                            </div>
+                        </div>
+                        <!-- Product actions--><i class="fa-solid fa-trash-can"></i>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <button type="button" class="btn btn-dark btn-xs">-</button>
+                            <input type="number" readonly value="1" name="number" id="rem">
+                            <button type="button" class="btn btn-dark btn-xs">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlo16MYPzfoREIku2qzepJMGyKAYaMYY8cWg&usqp=CAU"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Sale Item</h5>
+                                <!-- Product price-->
+                                <span value="500000">50.000</span>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                        <!-- Product actions--> <i class="fa-solid fa-trash-can"></i>
+
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <button type="button" class="btn btn-dark btn-xs">-</button>
+                            <input type="number" readonly value="1" name="number" id="rem">
+                            <button type="button" class="btn btn-dark btn-xs">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI4MiEJT6Y9tiBDnafsX1DLYp0z0bPRKdOgg&usqp=CAU"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Fancy Product</h5>
+                                <!-- Product price-->
+                               <span value="120000">120.00</span> 
+                                <i class="fa-solid fa-heart"></i>
+                                
+                            </div>
+                        </div>
+                        <!-- Product actions--><i class="fa-solid fa-trash-can"></i>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <button type="button" class="btn btn-dark btn-xs">-</button>
+                            <input type="number" readonly value="1" name="number" id="rem">
+                            <button type="button" class="btn btn-dark btn-xs">+</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0PDQ0NDQ0NDQ0NDQ0NDQ0NDQ8NDQ0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0NDg0NFSsZFRktKy03LSsrKy03KzcrNysrNystLSsrNysrLTcrKysrKysrKystKysrLSstLTcrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEBAAIDAQAAAAAAAAAAAAAAAQMGAgUHBP/EAEkQAAIBAgEFCAsPBAIDAAAAAAABAgMEEQUGEiGxMTJBUXGRwdETFFJTVGFyc4GDkhUWIyQzNEJDRIKhorLC0iKTo8Nj4WKElP/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oADAMBAAIRAxEAPwD3EAAAAAAIBQQAUEKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGG8uFSpTqyTahHSajhi+TE6P320e8V+Jp9j/kBsQNblndT4Ler6ZQRwed8fB5+3HqLBs4NXed68Hf9xdRPfc/B/8AJ/0IVtINUed0+C3XtvqOLztq8FCHtvqEK20GoPOyv3in7Ujg867nvVH8whW5A0t513Xe6PNLrOLzru+4oezLrESt2Bo7zrvO5oL7kv5GN503vHRXq31iFb4DQffPfd3TXql1l98V936K9VDqIrfQaA84L7wj/HS/iR5evvCH7FL+IHoAPPfdy98Jl7NP+JjqZbvfCanoUOoD0YHmcssXj+01udLoMayrerWrqt6ZYosSvUAaFaZ2XcMOyKFWPjWjLnR3VpnhbSwVWFSi+FtKUOddQitjB8trf0KqxpVYTx4FJY8x9JBQQAUEAHX5w/M7h4Y4UpPBbrNEpVOyb3XqT5Vxm+5d+aXHmpbDzulLQqatSk9KPFpfSj08/EUfU4HHQO5p2ds5NOpUWEU3rhg2+IyOztF9ZN/egi1mOi0AoHdu3s19Kb9ZEnYrL/yfrV1CrHSuJNE7nCy7lv1r6hp2fe/8khSOl0SOJ3PZrTvK9MpMvbFr3mPPIUdLoE0Duu2rbvMOZk7ct+80/YJR0ugNDxHcyvqODSo09aa3i3cDTrz3Ti32JWtSOvdt5Rf4SKO30CaJq1W9y0vslu+SjPrPmeUMtvctaMfUvpkBuWiTR4jTo1cty3XbU15qGr8x9EO304ure7k4PQpQjBNY602QbV2KXE+Ydrz7mXMzsFluXC1j5SRHlt93H+4gr4e1KncS9llVnV73P2WfTLLyW7VprlqpdJilnHTW7cUFy14LpFRx7Qrd7n7LK8n1u9T9kxyzpt1u3douW5p/yOHvqtuC8s//AKKb/cKM3uVWxxVKSfGtTOwtKuUqW8lUa7mbjJfizp3nVb+F23oqxfScJZ22/hNJ8ib2Abpa5du9yraJ+OFSMXzNnc2uUIVGo4ShN44Rlhi8OJpnl7zto8FbHyaNSWxHd5n5YVzeU4wk/wCjsjkqlOVGTWg9cVJLS18QV6AUgIPhy78zufM1Nh5w3itF6txqXcyW4z0nLfzS58zU/SzziKA+SrUyjGrNq2s3wa7yeHBr+TOLu8peD2C5bqs/9Z2V1bUtN/BwepbsU+BGBUqK3KdNfcj1FHxq7yh9JZOh62vL9qL2zeP6/J65I1ZdJ9i0FuRiuSC6jIp8WHMB1rq3nhdmuS2qS/2HByvX9ut15Nl1zO27K+Nh1XxvnA6lRu+G/X3LOHS2c+w3D+33K8m1oLbBnZObJpgdRKFXHR90L5viVC3X+srs63hmUHyRorZA7OQUwOrjk6baxuco7u66kIpcyM0smVMHhfXy9ZSe2B9tSctGWhhpYPR0k3HHxpHQ3OUcqQ1KjaTXGlVWP5gj6Z5MqeH3vt0f4Hx1cmz7IoO6vpRabc+zwSTXBgonw1su5T8Ft/8AI/3HyvLuVHuULdfcqP8AcB2lTJEOGtdz5bqqtjR86yPb6ccYTnjJLCpcXE4vlxk1+B8kbzKs3vLeGPFSl0yO1yXYXTnGpcVsVF46EIRjFvx8IV90MiW6+x2n3o6W2Jk9x6HglkvUxf7TsEciUdd7lU+C3s1/68eovuZHvdquSgus7AAfFHJ6X0aC5KK6zmrVrccFyUsOk+ogGBUJd85oIvYZd9muSMOozDAtGDsE+/1Oan1HeZl2mN6pSnOfY6VScVLRSUnhHHUlwSfOdWkbDmTD4zVfFRw55LqA3MpCkHx5YXxW4X/DU/SzzrQwPRsrfNq/man6WeeoDldP+t8kdiPna8Zmu9++SOxGACaP4FKABSFAjIciMDgyHIYAcSSgmc8C4AfJO2i+Axdqx4j72jg0B80aCXAZoxwOWBQKio4nIDkCYkxApAAKCFApseY6+GuH/wAdP9UjWzaMxY67l+aX6mBtgBQPlyovi9fzVT9LPPMGeiZR+Qrean+lnn0cMAOF3v3yR2IwGe7375I7EYAKCAClIAKRlIBAAgKAADOOByIBxwGByIBMAzkMAOAOWBGgJiA0QC4lxOIKOTZt2Ysfg7iXHUhHmjj0mnm55ir4vXfHcbKcANkAKQfPf/IVfNz/AEs86jo+Nno16vgavm57GeeKC1AcLvfvkjsRgM93v3yLYYAABQAAAAgAAFAAAAQoAgLgMAAAAgKTACYDApQOGBMDngMAMeBu+ZEcLST469R/hFdBpmBvWaEcLKHjnVf52ugDuQCgYbv5Kp5uexnnkZHol38lU8iew87hEDHdb98i2GEzXW/fo2GEoAAgAABgAAAAAoAAAAAAABCgCAoAiLgCgQFIAN8zWjhZUfHpvnmzREegZvLCzt/Ix/EDsACgYrn5Op5Eth57Bnos44pp7jTXOaDVo6EpR4YylF+h4AfFdb9+jYYDNd79+jYYCilRABWQYggoIAKAAAKAAAAFIAKAAIChAEUuBMCiAoAJHoeR1ha2/mobDzxvV6D0jJ8cKFFcVKmvyogzlAAGn5dhGNzUini5JVGu50uvBm4Gt510Xp0aiimmpQk+FYa47WBqt3v36NiMBmu3/XL0bDCUUExKAAABIoKAAKBAUhAKAUAMSEFAwLgUEjkkIo5gcNWKTxSeOteJGB39u2kpVW3jhhT1vDdwxJlGNRxXYlFyxe+lorB8J1dGwrwacLeyg1KclJyrSkpT3zx43gB29e7pRpqSjNylJQhCTUHKbeCTwWpdB89pdylUnTnGKaipxlTk5wlHxNpPHlR8NewuamuVSjHBppRjPBNbjWs+vJ9lKnjKdR1Kkkk5YYRS4kgPtq72XkvYenUo4RiuKKX4HmTWOrj1Hp5AKAAOrzjo6VtJrdhKM/Rjg9p2hiuqWnTqQ7qEo86A80u/lJejYYTNcr4SSe6sMeXAwprc4eLhKAM0LapLe06kvJpyfQZoZMuXuW9b+21tA+UHYQyLeP7PUXLorpM8c3L1/VRXlVIoDqSndQzWvHu9gjy1JPZEzwzRr/SrUlyKcuhAa8MTZYZnz+lcR9FN9ZnhmhT+lXm+SMUBqaBuUc07fhqVn96K6DJHNazW6qsuWq+gDSQb7DN6yX1OPlTm+kyxyJZr7PT9KxIPPTksD0aGT7eO5QpL7kTMqMFuQguSKA83jTb3IyfJFszRtKvBRrPkpT6j0VJcSAHn8cm3L3Ler6YOO05PI17q+Lz1+OH469RvwA0KOQL1/U6PlTh0M6XOKpc2MoxqWN7X01jGVnQlcw3dabjuPxM9XAHnGa+Tri/oyryoV7GKm4RjeUnTrVEksZKGOKjrwxe7gzYaWaMfp3En5NNR2tmzADpKWa9tHBuVSTTT1yS2I7sAAUAAQoA6rK+QbW7hGFWDWjNVFKlJ0pN8Ta3V4jsaFCFOMYU4xjGKUYpLBJLgMmAAEKABCgCFAAAAAAAAAAAACAAAAAAAAAAAAABQAAAAAAAQoAEKAIUAAAAAAAAAAAAIAAAAAAAAAAAAAFIUAAAAAAEAAAAAUAAAAAAAAAAAAIUACFAAhQAIUACAoAAAD//Z"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Special Item</h5>
+                                <!-- Product reviews-->
+                                <!-- Product price-->
+                                <span value="20000">20.000</span>
+                                <i class="fa-solid fa-heart"></i>
+                               
+                            </div>
+                        </div>
+                        <!-- Product actions--> <i class="fa-solid fa-trash-can"></i>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <button type="button" class="btn btn-dark btn-xs">-</button>
+                            <input type="number" readonly value="1" name="number" id="rem">
+                            <button type="button" class="btn btn-dark btn-xs">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQhJa3VdriufqarkAJS3nbrb9tO9hGsfGJuw&usqp=CAU"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Popular Item</h5>
+                                <!-- Product reviews-->
+                                <!-- Product price-->
+                                <span value="600000"> 600000</span>
+                                <i class="fa-solid fa-heart"></i>
+                                
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-trash-can"></i>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <button type="button" class="btn btn-dark btn-xs">-</button>
+                            <input type="number" readonly value="1" name="number" id="rem">
+                            <button type="button" class="btn btn-dark btn-xs">+</button>
+                        </div>
+                        <div class="total">
+                            <label for="tol">Total:</label>
+                            <input type="number"  value="0"readonly name="total" id="totaux">
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0  text-white" style="text-align: center ;">Copyright &copy; Your Website 2022</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
